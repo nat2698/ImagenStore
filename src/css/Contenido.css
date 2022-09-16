@@ -1,0 +1,83 @@
+
+.container-grid {
+    background: linear-gradient(to top, rgb(209, 207, 207), transparent);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 200px;
+    grid-gap: 20px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    left: 50px;;
+    display:inline-block;
+    margin: 20px;    
+    font-family: 'Handlee', cursive; 
+    font-size: 18px;
+    border: 2px solid;
+    width: 210px;
+    height: 300px;
+    background-color: #ffff;
+    border-radius: 15px;
+    border-style:none;
+    transition-property: all;
+    transition-duration: .3s;     
+}
+
+.box-card{
+    padding-top: 80px;
+    padding-bottom: 700px;
+    border-style:none;
+    display: flex;
+    justify-content:center;
+    color:black;
+    width: 100%;
+    
+    height: 100vh;
+}
+
+.text{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover{ 
+    border-radius: 2px solid;
+    transform: scale(1.2);
+    box-shadow: 6px 10px 17px -3px rgba(0,0,0,0.75);    
+}
+.ima{
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    border-style:none;
+    width: 200px;
+    height: 180px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.button{
+    color:#000;
+    margin-top: 5px;
+    margin-left: 32%;
+    padding:7px;
+    border-radius: 15px;
+    border-style:none;
+    background-color: rgba(197, 188, 188, 0.877);   
+}
+.button:hover{
+    background:linear-gradient(to bottom, transparent, #222);
+    color:#000;
+    border: 2px white;
+    padding: 8px;
+    cursor:pointer;
+}
+NavLink{
+    color:#000;
+}
