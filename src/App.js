@@ -45,7 +45,7 @@ function App() {
           <Route path="/imagenes" element={<Imagenes/>} />
         </Routes>
         <Routes>
-          <Route path="/compraIma" element={<CompraIma/>} />
+          <Route path="/compraIma/:id" element={<CompraIma/>} />
         </Routes>
 
         <Footer />
