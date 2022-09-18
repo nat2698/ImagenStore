@@ -35,3 +35,22 @@ textarea{
     min-height: 140PX;
     resize: none;
 }
+
+
+@media screen and (max-width: 768px){
+    .container-form{
+        width: 100%;
+    }
+    
+    .form{
+        width:100% ;
+      
+    }
+
+    .title p{
+        font-size: 30px;
+        margin-left: -12px;
+        
+    }
+
+}

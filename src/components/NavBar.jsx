@@ -1,8 +1,15 @@
 import React from "react";
 import "../css/NavBar.css";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const NavBar = () => {
+
+  const [responsive, setResponsive] = useState(true);
+
+  const handleResponsive = () => {
+    setResponsive(!responsive)
+  };
   return (
     <>
       <header className="header">
@@ -11,7 +18,7 @@ const NavBar = () => {
           <NavLink to="/inicio">ImagenStore</NavLink>
         </div>
 
-        <nav className="navbar">
+        <nav className={responsive? "navbar" : "enlaces-menu-activado"}>
           <ul className="enlaces-menu">
             <li className="item">
               <NavLink to="/inicio">Inicio</NavLink>
@@ -28,12 +35,13 @@ const NavBar = () => {
             
           </ul>
 
-          <button className="ham" type="button">
-            <span className="br-1"></span>
-            <span className="br-2>"></span>
-            <span className="br-3>"></span>
-          </button>
+          
         </nav>
+
+        <button className={responsive? "ham" : "btn-ham"} type="button" onClick={handleResponsive}>
+      
+        <i class="fa-solid fa-bars"></i>
+          </button>
       </header>
     </>
   );

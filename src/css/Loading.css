@@ -1,3 +1,11 @@
+.contenido-loading{
+    width: 100vw;
+    height: 90vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .lds-roller {
     display: inline-block;
     position: relative;

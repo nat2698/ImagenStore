@@ -3,49 +3,6 @@ import "../css/Login.css";
 
 const Login = () => {
 
-    // const [inicioSesion, setInicioSesion] = useState({
-    //   usuario: "",
-    //   password: "",
-    //   check: "",
-
-    // });
-
-    
-
-    // const handleSubmit = (e) => {
-    //   e.preventDefault();
-
-    //   const {usuario, password} = inicioSesion;
-    //   if(!usuario.trim() || password.trim()){
-    //     alert("Debe ingresar el usuario");
-    //     console.log("error");
-    //     setError(true);
-
-    //     return;
-    //   }
-     
-
-      
-    //   console.log(inicioSesion);
-    // };
-
-    // const handleChange = (e) => {
-      
-    //   const {name, value, checked, type} = e.target;
-
-    //   setInicioSesion({
-    //     ...inicioSesion,
-    //     [name]: type === "checkbox" ? checked : value,
-    //   });
-    // }
-
-    // const mostrarError = () => {
-    //   <div>Campos obligatorios</div>
-    // };
-
-
-
-
   return (
     <>
       <div className="container-title">
@@ -53,11 +10,10 @@ const Login = () => {
         <h3>Aquí podrás mirar y administrar tu cuenta y pedidos</h3>
       </div>
 
-      {error ? mostrarError() : null}
 
       <div className="contenido">
         <div className="container">
-          <form onSubmit={handleSubmit} className="form">
+          <form className="form">
             <div className="title">
               <p>Iniciar Sesión</p>
             </div>

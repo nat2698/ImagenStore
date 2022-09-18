@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 
 
 const Contenido = () => {
+  
   return (
     <>
       <div className="box-card">

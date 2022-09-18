@@ -3,7 +3,7 @@ import '../css/Loading.css'
 
 function Loading() {
   return (
-    <div>
+    <div className="contenido-loading">
       <div className="lds-roller">
         <div></div>
         <div></div>
